@@ -1,0 +1,20 @@
+dtmf_tones = load('DTMFverificationtest.mat');
+tone1 = dtmf_tones.VerificationTest1;
+tone2 = dtmf_tones.VerificationTest2;
+tone3 = dtmf_tones.VerificationTest3;
+tone4 = dtmf_tones.VerificationTest4;
+tone5 = dtmf_tones.VerificationTest5;
+tone6 = dtmf_tones.VerificationTest6;
+s1 = spectrogram(tone1);
+s2 = spectrogram(tone2);
+s3 = spectrogram(tone3);
+s4 = spectrogram(tone4);
+s5 = spectrogram(tone5);
+s6 = spectrogram(tone6);
+
+spectrogram(tone1, 'yaxis');
+spectrogram(tone2, 'yaxis');
+spectrogram(tone3, 'yaxis');
+spectrogram(tone4, 'yaxis');
+spectrogram(tone5, 'yaxis');
+spectrogram(tone6, 'yaxis');
